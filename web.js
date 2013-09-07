@@ -33,7 +33,7 @@ app.listen(port, function() {
 function getHostKey(request){
   
   var key = request.query.key;
-  key = key || {'qazaghlara.duynstee.com': '1', 'gtuijlae.duynstee.com': '2', 'ijlaegtu.duynstee.com': '3', 'dwocdkumng.duynstee.com': '4', 'mammoliont.duynstee.com': '5'}[request.headers.host];
+  key = key || {'qazaghlara.duynstee.com': '1', 'gtuijlae.duynstee.com': '2', 'ijlaegtu.duynstee.com': '3', 'dwocdkumng.duynstee.com': '4', 'mammoliont.duynstee.com': '5', 'basiulopoq.duynstee.com': '6'}[request.headers.host];
   return key;
 }
 function getSettingsForKey(hostKey){

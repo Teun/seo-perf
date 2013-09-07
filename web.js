@@ -33,7 +33,7 @@ app.listen(port, function() {
 function getHostKey(request){
   
   var key = request.query.key;
-  key = key || {'www.qazaghlara.com': '1', 'www.gtuijlae.com': '2', 'localhost:5000': '10'}[request.headers.host];
+  key = key || {'qazaghlara.duynstee.com': '1', 'gtuijlae.duynstee.com': '2', 'ijlaegtu.duynstee.com': '3', 'dwocdkumng.duynstee.com': '4', 'mammoliont.duynstee.com': '5'}[request.headers.host];
   return key;
 }
 function getSettingsForKey(hostKey){
@@ -43,7 +43,7 @@ function getSettingsForKey(hostKey){
     '3': {rot:5, waitMain:4000, waitResource:0, titleWord: 'ijlaegtu', imgWidth:220},
     '4': {rot:5, waitMain:2000, waitResource:2000, titleWord: 'dwocdkumng', imgWidth:300},
     '5': {rot:5, waitMain:0, waitResource:500, titleWord: 'mammoliont', imgWidth:310},
-    '10': {rot:1, waitMain:500, waitResource:0, titleWord: 'basiulopoq', imgWidth:350},
+    '6': {rot:1, waitMain:0, waitResource:0, titleWord: 'xxxxx', imgWidth:350},
   }[hostKey] || {rot:1, waitMain:0, waitResource:0, titleWord: 'localhost', imgWidth:201};
 }
 function rot(input, rotx){

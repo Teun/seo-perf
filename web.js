@@ -23,7 +23,11 @@ app.get('/', function(request, response) {
     }
   setTimeout(function(){response.render('index')}, settings.waitMain);
 	});
-
+app.get('/script', function(request, response) {
+  var hostKey = getHostKey(request);
+  var settings = getSettingsForKey(hostKey);
+  setTimeout(function(){response.writeHead(200, {'Content-Type': 'application/javascript'});response.end();}, settings.waitResource);
+  });
 var port = process.env.PORT || 5000;
 app.listen(port, function() {
   console.log("Listening on " + port);

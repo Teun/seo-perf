@@ -43,10 +43,10 @@ function getHostKey(request){
 function getSettingsForKey(hostKey){
   return {
     '1': {rot:7, waitMain:0, waitResource:0, titleWord: 'qazaghlara', imgWidth:230},
-    '2': {rot:5, waitMain:500, waitResource:0, titleWord: 'gtuijlae', imgWidth:210},
-    '3': {rot:5, waitMain:4000, waitResource:0, titleWord: 'ijlaegtu', imgWidth:220},
-    '4': {rot:5, waitMain:2000, waitResource:2000, titleWord: 'dwocdkumng', imgWidth:300},
-    '5': {rot:5, waitMain:0, waitResource:500, titleWord: 'mammoliont', imgWidth:310},
+    '2': {rot:5, waitMain:1000, waitResource:0, titleWord: 'gtuijlae', imgWidth:210},
+    '3': {rot:5, waitMain:8000, waitResource:0, titleWord: 'ijlaegtu', imgWidth:220},
+    '4': {rot:5, waitMain:4000, waitResource:4000, titleWord: 'dwocdkumng', imgWidth:300},
+    '5': {rot:5, waitMain:0, waitResource:1000, titleWord: 'mammoliont', imgWidth:310},
     '6': {rot:1, waitMain:0, waitResource:0, titleWord: 'xxxxx', imgWidth:350},
   }[hostKey] || {rot:1, waitMain:0, waitResource:0, titleWord: 'localhost', imgWidth:201};
 }
